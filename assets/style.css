@@ -1,0 +1,189 @@
+:root{
+  --nav-bg: #1F2A37;        /* bleu foncé pro */
+  --nav-bg-2: #1E293B;      /* variante */
+  --accent: #1EA7D7;        /* bleu logo */
+  --accent-hover: #38BDF8;  /* hover */
+  --text: #FFFFFF;
+  --muted: rgba(255,255,255,.78);
+  --shadow: 0 10px 30px rgba(0,0,0,.18);
+  --radius: 14px;
+  --maxw: 1200px;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:#f3f4f6;
+  color:#111827;
+}
+
+/* espace sous la barre fixe */
+.page{
+  padding-top: 92px; /* adapte si tu changes la hauteur du header */
+}
+
+.header-wrap{
+  position: fixed;
+  top: 12px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 0 16px;
+}
+
+.header{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  height: 68px;
+  border-radius: var(--radius);
+  background: linear-gradient(90deg, var(--nav-bg), #2a3b55 60%, #24324a);
+  box-shadow: var(--shadow);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 0 14px;
+  overflow:hidden;
+  position: relative;
+}
+
+/* image de fond (optionnelle) */
+.header::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image: url("./vague-blauw.png"); /* mets ton image ici */
+  background-size: cover;
+  background-position: right center;
+  opacity: .16; /* très léger */
+  pointer-events:none;
+}
+
+.header > *{ position: relative; z-index: 1; }
+
+.left{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  min-width: 240px;
+}
+
+.lang-btn{
+  border: 1px solid rgba(255,255,255,.25);
+  background: rgba(255,255,255,.08);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-weight: 600;
+  cursor:pointer;
+  transition: .15s ease;
+}
+.lang-btn:hover{
+  background: rgba(56,189,248,.18);
+  border-color: rgba(56,189,248,.45);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  text-decoration:none;
+  color: var(--text);
+}
+
+.brand img{
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display:block;
+}
+
+.brand .title{
+  display:flex;
+  flex-direction:column;
+  line-height:1.05;
+}
+.brand .title strong{
+  letter-spacing: .5px;
+  font-size: 16px;
+}
+.brand .title small{
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* NAV center */
+.nav{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+  justify-content:center;
+  flex:1;
+}
+
+.nav a{
+  color: var(--muted);
+  text-decoration:none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: .15s ease;
+  font-weight: 600;
+}
+
+.nav a:hover{
+  color: var(--text);
+  background: rgba(255,255,255,.10);
+}
+
+.nav a.active{
+  color: var(--text);
+  background: rgba(30,167,215,.22);
+  border: 1px solid rgba(30,167,215,.35);
+}
+
+/* CTA right */
+.right{
+  min-width: 240px;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.cta{
+  background: linear-gradient(180deg, rgba(30,167,215,.95), rgba(20,142,190,.95));
+  color: white;
+  text-decoration:none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 800;
+  box-shadow: 0 10px 18px rgba(0,0,0,.18);
+  border: 1px solid rgba(255,255,255,.18);
+  transition: .15s ease;
+}
+.cta:hover{
+  transform: translateY(-1px);
+  background: linear-gradient(180deg, rgba(56,189,248,.95), rgba(30,167,215,.95));
+}
+
+/* Responsive simple */
+@media (max-width: 900px){
+  .left{ min-width:auto; }
+  .right{ min-width:auto; }
+  .brand .title small{ display:none; }
+  .nav{ gap: 6px; }
+  .nav a{ padding: 10px 9px; font-size: 14px; }
+}
+
+@media (max-width: 720px){
+  .nav{ display:none; } /* pour mobile on peut faire un menu burger plus tard */
+  .header{ justify-content:space-between; }
+}
+
+/* contenu placeholder */
+.card{
+  max-width: var(--maxw);
+  margin: 24px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
