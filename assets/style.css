@@ -312,6 +312,32 @@ body{
 .card h3{ margin:10px 0 6px; }
 .card p{ margin:0; color:#6b7280; }
 
+/* Photos cabinet */
+.photo-row{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.photo-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  padding:12px;
+  box-shadow:0 10px 24px rgba(0,0,0,.06);
+  min-height: 220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.photo-card img{
+  width:100%;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 12px;
+  background:#f3f4f6;
+  border: 1px dashed #d1d5db;
+}
+
 .card-icon{
   width:46px; height:46px; border-radius:14px;
   background: rgba(30,167,215,.10);
@@ -391,6 +417,7 @@ body{
 .footer a:hover{ color:#fff; }
 .footer-brand{ display:flex; gap:10px; align-items:center; }
 .footer-brand img{ width:34px; height:34px; object-fit:contain; opacity:.9; }
+.footer-label{ font-size:11px; letter-spacing:.6px; text-transform:uppercase; color: rgba(255,255,255,.65); }
 .footer-title{ font-weight:900; letter-spacing:.4px; }
 .footer-sub{ color: rgba(255,255,255,.74); font-size:13px; }
 .footer-h{ font-weight:900; }
@@ -414,5 +441,6 @@ body{
 @media (max-width: 560px){
   .grid-3{ grid-template-columns: 1fr; }
   .trust-row{ grid-template-columns: 1fr; }
+  .photo-row{ grid-template-columns: 1fr; }
 }
 
