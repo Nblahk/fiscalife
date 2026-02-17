@@ -571,10 +571,27 @@ body{
   .grid-3{ grid-template-columns: repeat(2,1fr); }
   .split{ grid-template-columns: 1fr; }
   .footer-grid{ grid-template-columns: 1fr; }
+  .container{ padding: 0 14px 40px; }
+  .section{ margin: 20px 0; }
+  .hero-title{ font-size: 30px; }
+  .hero-subtitle{ font-size: 15px; }
+  .media-img{ height: 210px; }
+  .card{ padding: 14px; }
+  .contact-panel{ padding: 14px; }
+  .contact-photo img{ max-height: 320px; }
+  .map-card iframe{ height: 340px; }
 }
 @media (max-width: 560px){
   .grid-3{ grid-template-columns: 1fr; }
   .trust-row{ grid-template-columns: 1fr; }
   .photo-row{ grid-template-columns: 1fr; }
+  .hero-title{ font-size: 26px; }
+  .pill{ font-size: 12px; }
+  .btn{ width: 100%; }
+  .media-img{ height: 180px; }
+  .card h3{ font-size: 18px; }
+  .contact-form input,
+  .contact-form textarea{ padding: 8px 10px; }
+  .map-card iframe{ height: 300px; }
 }
 
