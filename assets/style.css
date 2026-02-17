@@ -199,6 +199,8 @@ body{
 .section-head h2{ margin:0; font-size: 24px; }
 .section-head p{ margin:0; color:#4b5563; max-width: 72ch; }
 
+/* Grille services centrée */
+
 /* ====== CONTACT ====== */
 .contact-intro{
   max-width: var(--maxw);
@@ -534,7 +536,7 @@ body{
 
 /* Footer */
 .footer{
-  margin-top: 26px;
+  margin-top: 38px;
   padding: 18px;
   background:#0f172a;
   color:#fff;
