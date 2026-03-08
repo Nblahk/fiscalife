@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FISCALIFE • Newsletter</title>
+  <title>FISCALIFE • Newsletter & FAQ</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -11,13 +11,11 @@
   <div class="header-wrap">
     <header class="header">
       <div class="left">
-
-
         <!-- Logo + nom -->
         <a class="brand" href="index.html">
           <img src="assets/mini-logo.png" alt="FISCALIFE" />
           <div class="title">
-            <strong>FISCA LIFE</strong>
+            <strong>FISCALIFE</strong>
             <small data-i18n="tagline">Expertise-comptable et conseils fiscaux</small>
           </div>
         </a>
@@ -32,17 +30,774 @@
         <a href="contact.html" data-i18n="contact">Contact</a>
       </nav>
 
-              <!-- Tout à droite : langue -->
-        <button id="langToggle" class="lang-btn" type="button">EN</button>
+      <!-- Tout à droite : langue -->
+      <button id="langToggle" class="lang-btn" type="button">EN</button>
 
     </header>
   </div>
 
   <main class="page">
     <div class="container">
-      <section class="card">
-        <h1 data-i18n="placeholderTitle">Page en construction</h1>
-        <p data-i18n="placeholderText">Contenu à venir…</p>
+      <!-- HERO -->
+      <section class="section hero nl-hero">
+        <div class="section-head">
+          <span class="pill">Newsletter & FAQ</span>
+          <p>
+            Retrouvez nos dernières actualités fiscales et conseils pratiques pour votre entreprise.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4 NEWS CARDS -->
+      <section class="nl-cards">
+        <article class="nl-card">
+          <img src="assets/news1.jpg" alt="Calendrier et calculatrice" />
+          <div class="nl-card-body">
+            <h3>Échéance TVA trimestrielle : documents à préparer</h3>
+            <div class="nl-meta">20 Avril 2024 <span>•</span> TVA</div>
+            <p>
+              Liste des documents à fournir avant la date limite du 20 avril pour la déclaration TVA.
+            </p>
+            <a href="#" class="nl-link">Lire plus</a>
+          </div>
+        </article>
+
+        <article class="nl-card">
+          <img src="assets/news2.jpg" alt="Réforme fiscale PME" />
+          <div class="nl-card-body">
+            <h3>Nouvelle réforme fiscale pour PME : ce qui change</h3>
+            <div class="nl-meta">18 Avril 2024 <span>•</span> Fiscalité</div>
+            <p>
+              Découvrez les dernières modifications fiscales qui impactent les PME en Belgique.
+            </p>
+            <a href="#" class="nl-link">Lire plus</a>
+          </div>
+        </article>
+
+        <article class="nl-card">
+          <img src="assets/news3.jpg" alt="Déductions indépendants" />
+          <div class="nl-card-body">
+            <h3>Indépendants : comment maximiser vos déductions ?</h3>
+            <div class="nl-meta">15 Avril 2024 <span>•</span> Indépendants</div>
+            <p>
+              Astuces pour maximiser vos déductions fiscales en tant qu’indépendant en 2024.
+            </p>
+            <a href="#" class="nl-link">Lire plus</a>
+          </div>
+        </article>
+
+        <article class="nl-card">
+          <img src="assets/news4.jpg" alt="Création société Belgique" />
+          <div class="nl-card-body">
+            <h3>Créer sa société en Belgique : guide 2024</h3>
+            <div class="nl-meta">8 Avril 2024 <span>•</span> Création d’entreprise</div>
+            <p>
+              Les étapes clés pour créer votre société en Belgique et bien démarrer.
+            </p>
+            <a href="#" class="nl-link">Lire plus</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section">
+        <h2>FAQs : Comment pouvons-nous vous aider ?</h2>
+        <p class="faq-intro">
+          Retrouvez les réponses à vos questions fréquentes par catégorie.
+        </p>
+
+        <!-- Filtres FAQ -->
+        <div class="faq-filters" id="faqFilters">
+          <button class="faq-filter active" data-filter="all" type="button">Tous</button>
+          <button class="faq-filter" data-filter="fiscalite" type="button">Fiscalité</button>
+          <button class="faq-filter" data-filter="tva" type="button">TVA</button>
+          <button class="faq-filter" data-filter="independants" type="button">Indépendants</button>
+          <button class="faq-filter" data-filter="pme" type="button">PME</button>
+          <button class="faq-filter" data-filter="societes" type="button">Sociétés</button>
+        </div>
+
+        <!-- Items FAQ -->
+        <div class="faq-list" id="faqList">
+
+          <article class="faq-item is-open" data-cat="fiscalite pme">
+            <button class="faq-question" type="button">
+              <span>Quels sont les principaux changements fiscaux pour les PME en 2024 ?</span>
+              <span class="faq-icon">−</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Les réformes fiscales peuvent impacter la déductibilité, certaines obligations déclaratives et la planification de trésorerie.
+                Un suivi régulier permet d’anticiper ces changements et d’éviter les erreurs.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants fiscalite">
+            <button class="faq-question" type="button">
+              <span>Quelles dépenses sont déductibles pour un indépendant ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Les indépendants peuvent déduire plusieurs frais professionnels : matériel, déplacements, téléphonie, loyers (selon cas),
+                formations, etc., à condition qu’ils soient justifiés et liés à l’activité.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva">
+            <button class="faq-question" type="button">
+              <span>Quelle TVA appliquer pour mes prestations de services ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Le taux TVA dépend du type de service, du lieu de prestation et du statut du client. Une vérification au cas par cas est
+                importante pour rester conforme et éviter les régularisations.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes">
+            <button class="faq-question" type="button">
+              <span>Quelles étapes pour créer une société en Belgique ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Le lancement comprend le choix de la forme juridique, les démarches administratives, l’inscription BCE/TVA et la mise
+                en place d’une organisation comptable claire dès le départ.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva pme independants societes">
+            <button class="faq-question" type="button">
+              <span>Quand dois-je envoyer ma déclaration TVA trimestrielle ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Les déclarations TVA trimestrielles sont soumises à des échéances précises. Il est conseillé de préparer les documents
+                à l’avance pour éviter tout retard ou pénalité.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants pme societes">
+            <button class="faq-question" type="button">
+              <span>Quels documents préparer pour mon comptable ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Factures d’achat et de vente, extraits bancaires, justificatifs de frais, notes de crédit, documents sociaux et fiscaux :
+                une bonne organisation facilite le suivi et réduit les erreurs.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite">
+            <button class="faq-question" type="button">
+              <span>Quelle est la différence entre IPP et ISOC en Belgique ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                IPP concerne les personnes physiques (indépendants en nom propre). ISOC concerne les sociétés. Le calcul, les taux et les obligations diffèrent. Nous vous aidons à choisir la structure la plus adaptée et à anticiper l’impôt.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite independants">
+            <button class="faq-question" type="button">
+              <span>Comment fonctionnent les versements anticipés (VA) et à quoi servent-ils ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Les VA permettent de payer une partie de l’impôt au fur et à mesure. Ne pas en faire peut entraîner une majoration. Nous planifions les VA selon vos revenus et votre trésorerie.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite societes">
+            <button class="faq-question" type="button">
+              <span>Comment se rémunérer en société : salaire, dividendes, avantages ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Il existe plusieurs leviers (rémunération dirigeant, dividendes, avantages en nature). Le bon mix dépend de votre situation et des règles fiscales. Nous structurons une stratégie légale et claire.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite">
+            <button class="faq-question" type="button">
+              <span>Quels frais professionnels sont généralement déductibles ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Les frais doivent être liés à l’activité, justifiés et raisonnables. Exemples : matériel, logiciels, téléphone, déplacements, formations, prestations externes… La déductibilité peut varier selon le type de dépense.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite">
+            <button class="faq-question" type="button">
+              <span>Qu’est-ce qu’une dépense non admise (DNA) ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Certaines dépenses ne sont pas (ou pas totalement) déductibles fiscalement. Elles doivent parfois être réintégrées dans le résultat imposable. Nous vous aidons à identifier les risques et à tenir une comptabilité propre.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite pme">
+            <button class="faq-question" type="button">
+              <span>Comment optimiser sa fiscalité légalement sans prendre de risques ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                L’optimisation repose sur une organisation correcte (frais, investissements, planification), une bonne structure et le respect strict des règles. L’objectif est de réduire l’impôt de façon durable et défendable.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite">
+            <button class="faq-question" type="button">
+              <span>Quels documents conserver en cas de contrôle fiscal et combien de temps ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Il faut conserver factures, extraits, contrats, justificatifs et pièces comptables. La durée exacte dépend des règles applicables. Nous vous aidons à mettre en place un archivage simple et conforme.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite societes">
+            <button class="faq-question" type="button">
+              <span>Quels sont les points clés lors d’une clôture annuelle en société ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Inventaire, amortissements, provisions, régularisations, vérification TVA, cohérence des comptes. Une clôture bien préparée évite les surprises et améliore votre pilotage.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite">
+            <button class="faq-question" type="button">
+              <span>Puis-je déduire mes frais de voiture et comment ça fonctionne ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                La déductibilité dépend du type de véhicule, de son usage et des règles en vigueur (carburant, entretien, leasing…). Nous calculons ce qui est déductible et ce qui doit être limité.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="fiscalite independants pme societes">
+            <button class="faq-question" type="button">
+              <span>Comment éviter une mauvaise surprise d’impôt en fin d’année ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Avec un suivi périodique, nous anticipons les résultats, ajustons les versements anticipés et planifions les dépenses/investissements de manière cohérente.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva">
+            <button class="faq-question" type="button">
+              <span>TVA mensuelle ou trimestrielle : comment savoir ce qui s’applique ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Le régime dépend de votre activité, de votre chiffre d’affaires et de certains seuils/règles. Nous vérifions votre situation et vous plaçons dans le régime correct.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva">
+            <button class="faq-question" type="button">
+              <span>Quelles dates importantes dois-je retenir pour la TVA ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Dépôt des déclarations, paiement, listing annuel, éventuelles obligations intracom. Nous gérons le calendrier et les rappels pour éviter retards et pénalités.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva">
+            <button class="faq-question" type="button">
+              <span>Qu’est-ce qu’une note de crédit et quel impact sur la TVA ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Une note de crédit corrige une facture (retour, remise, erreur). Elle modifie la base TVA et doit être encodée correctement pour que la déclaration TVA soit juste.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva">
+            <button class="faq-question" type="button">
+              <span>Comment corriger une erreur TVA sur une déclaration déjà envoyée ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Selon le cas, la correction passe par la déclaration suivante ou par une procédure spécifique. Le plus important est d’agir vite et de documenter l’erreur.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva">
+            <button class="faq-question" type="button">
+              <span>Qu’est-ce que le listing annuel clients assujettis ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                C’est un récapitulatif des ventes à des clients assujettis belges. Il doit être déposé à une échéance précise. Nous le préparons à partir de votre comptabilité.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva">
+            <button class="faq-question" type="button">
+              <span>TVA intracom : quand dois-je déposer une déclaration intracommunautaire ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Si vous facturez ou prestez à des assujettis dans l’UE, ou réalisez certaines opérations, une déclaration intracom peut être requise. Nous vérifions vos factures et vos obligations.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva">
+            <button class="faq-question" type="button">
+              <span>TVA sur les frais (restaurant, voiture, téléphone) : est-ce récupérable ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                La récupération TVA dépend du type de dépense et des limitations. Certaines TVA sont partiellement ou non récupérables. Nous appliquons les règles correctement.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva independants">
+            <button class="faq-question" type="button">
+              <span>Franchise TVA : c’est quoi et est-ce intéressant ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                La franchise (petites entreprises) permet de ne pas facturer la TVA, mais limite la récupération de TVA sur achats. Le choix dépend de vos clients et de vos coûts.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva societes pme">
+            <button class="faq-question" type="button">
+              <span>Que faut-il mettre obligatoirement sur une facture pour être conforme TVA ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Mentions légales, numéros TVA, dates, description, taux, total, etc. Une facture non conforme peut poser problème en contrôle. Nous vous donnons un modèle.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="tva">
+            <button class="faq-question" type="button">
+              <span>Comment se passe un contrôle TVA et comment s’y préparer ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                L’administration peut demander pièces, factures, relevés et justification des opérations. Une comptabilité à jour et des documents bien classés réduisent le stress et les risques.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants">
+            <button class="faq-question" type="button">
+              <span>Indépendant complémentaire vs principal : quelles différences ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Le statut influence surtout le social et certaines obligations. Fiscalement, l’IPP s’applique, mais l’organisation (frais, TVA, VA) doit être adaptée.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants">
+            <button class="faq-question" type="button">
+              <span>Comment séparer dépenses privées et professionnelles ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Idéalement, comptes séparés et justificatifs clairs. Mélanger complique la comptabilité et augmente le risque d’erreur. Nous vous donnons une méthode simple.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants fiscalite">
+            <button class="faq-question" type="button">
+              <span>Puis-je déduire une partie de mon loyer/charges si je travaille à domicile ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Oui dans certains cas, selon l’usage professionnel réel et les justificatifs. Nous calculons une proportion cohérente et évitons les excès.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants">
+            <button class="faq-question" type="button">
+              <span>Quelles sont les erreurs les plus fréquentes chez les indépendants ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Factures manquantes, frais non justifiés, TVA mal appliquée, retard d’échéances, versements anticipés oubliés. Nous mettons en place une routine simple pour éviter cela.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants">
+            <button class="faq-question" type="button">
+              <span>Quels documents dois-je transmettre chaque mois/trimestre ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Factures ventes/achats, extraits bancaires, justificatifs de frais, notes de crédit, documents sociaux et fiscaux. Plus c’est régulier, plus la comptabilité est fiable.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants">
+            <button class="faq-question" type="button">
+              <span>Comment fixer mes prix en tenant compte des impôts et charges ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Il faut intégrer la TVA (si applicable), les charges sociales, l’impôt, et les coûts fixes/variables. Un calcul de marge simple évite de travailler à perte.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants tva">
+            <button class="faq-question" type="button">
+              <span>Je facture à l’étranger : comment gérer la TVA et les mentions ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Cela dépend du pays, du statut du client (B2B/B2C) et du type de service. Nous vérifions chaque cas et les obligations intracom.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants">
+            <button class="faq-question" type="button">
+              <span>Puis-je acheter du matériel via mon activité et l’amortir ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Oui : certaines dépenses s’amortissent sur plusieurs années (ordinateur, mobilier…). Nous appliquons la bonne durée et gardons les justificatifs nécessaires.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants">
+            <button class="faq-question" type="button">
+              <span>Comment anticiper ma déclaration IPP ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Avec un suivi périodique, nous estimons le résultat, planifions les versements anticipés et évitons une grosse facture en fin d’année.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="independants">
+            <button class="faq-question" type="button">
+              <span>Qu’est-ce qu’un régime de franchise TVA (petites entreprises) et est-ce adapté ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Il permet de ne pas facturer la TVA, mais limite la récupération de TVA. Le choix dépend de vos clients et de vos coûts. Nous comparons les avantages et inconvénients.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme">
+            <button class="faq-question" type="button">
+              <span>Pourquoi faire un reporting mensuel ou trimestriel ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Pour suivre la rentabilité et la trésorerie, anticiper l’impôt, détecter les problèmes tôt et prendre de meilleures décisions.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme">
+            <button class="faq-question" type="button">
+              <span>Comment améliorer la gestion de trésorerie (cashflow) ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Suivi des encaissements, relances, échéances fournisseurs, planification TVA/impôts. Nous mettons en place un tableau de pilotage simple.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme">
+            <button class="faq-question" type="button">
+              <span>Qu’est-ce qu’un budget prévisionnel et à quoi sert-il ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Il sert à planifier revenus et dépenses, comparer le réel au prévu et ajuster rapidement la stratégie.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme">
+            <button class="faq-question" type="button">
+              <span>Comment réduire le risque d’erreurs comptables en interne ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Process de facturation, classement, validation, rythme d’envoi et outils digitaux. Nous standardisons l’organisation pour gagner du temps et sécuriser.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme tva">
+            <button class="faq-question" type="button">
+              <span>Pourquoi les déclarations TVA sont-elles souvent sources d’erreurs ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Mauvais taux, opérations intracom, notes de crédit, pièces manquantes. Une bonne organisation évite la plupart des problèmes.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme">
+            <button class="faq-question" type="button">
+              <span>Quels KPI suivre pour piloter une PME ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Marge, charges, résultat, trésorerie, dettes, clients en retard, TVA à payer. Nous choisissons les indicateurs adaptés à votre activité.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme fiscalite">
+            <button class="faq-question" type="button">
+              <span>Comment préparer une clôture annuelle sans stress ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Inventaire, justificatifs, amortissements, régularisations, documents manquants. Plus on prépare tôt, plus la clôture est simple.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme">
+            <button class="faq-question" type="button">
+              <span>Comment gérer les factures impayées et l’impact comptable ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Relances, suivi, procédures internes et, selon le cas, provisions/écritures. Une gestion active protège la trésorerie.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme">
+            <button class="faq-question" type="button">
+              <span>Quand est-ce utile de passer en société plutôt que rester indépendant ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Cela dépend des revenus, risques, investissements et de la stratégie. Nous comparons les options et les impacts fiscaux.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="pme">
+            <button class="faq-question" type="button">
+              <span>Quelles erreurs éviter lors d’un changement de fiduciaire ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Dossiers incomplets, documents non transmis, soldes incohérents. Nous organisons une reprise propre et sécurisée.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes">
+            <button class="faq-question" type="button">
+              <span>Quelles sont les obligations d’une société chaque année ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Clôture, comptes annuels, déclarations fiscales, dépôts et obligations TVA éventuelles. Nous gérons le calendrier et les dépôts.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes fiscalite">
+            <button class="faq-question" type="button">
+              <span>Qu’est-ce que la rémunération du dirigeant et pourquoi c’est important ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                La structure de rémunération influence la fiscalité et certains avantages. Nous adaptons la rémunération à votre situation.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes">
+            <button class="faq-question" type="button">
+              <span>Puis-je me verser des dividendes et quand ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Oui, sous conditions (résultats, décisions, règles de distribution). Nous vérifions la faisabilité et l’impact fiscal.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes">
+            <button class="faq-question" type="button">
+              <span>Quels sont les documents clés pour une clôture annuelle ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Inventaire, contrats, immobilisations, relevés, justificatifs. Une checklist claire évite les oublis.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes">
+            <button class="faq-question" type="button">
+              <span>Comment fonctionne l’amortissement dans une société ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Les investissements s’amortissent sur plusieurs années. Nous choisissons une durée réaliste et conforme et suivons les immobilisations.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes">
+            <button class="faq-question" type="button">
+              <span>Que sont les avantages en nature (voiture, GSM, etc.) ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Ce sont des avantages privés pris en charge par la société avec un traitement fiscal/social spécifique. Nous les calculons et les déclarons correctement.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes tva">
+            <button class="faq-question" type="button">
+              <span>Ma société facture à l’étranger : quelles obligations TVA ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Selon le pays, le client et l’opération : intracom, autoliquidation, mentions spécifiques. Nous sécurisons vos factures et déclarations.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes">
+            <button class="faq-question" type="button">
+              <span>Quelle différence entre SRL et entreprise individuelle (en pratique) ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Responsabilité, fiscalité, gestion, coûts et stratégie de rémunération diffèrent. Nous vous aidons à choisir selon vos objectifs.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes">
+            <button class="faq-question" type="button">
+              <span>Comment éviter les pénalités (TVA, ISOC, dépôts) ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Process, calendrier, envoi régulier des pièces et suivi. Nous mettons en place une méthode simple et des rappels.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item" data-cat="societes">
+            <button class="faq-question" type="button">
+              <span>Que faire en cas de contrôle ou demande de l’administration ?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Il faut répondre dans les délais avec des pièces cohérentes et un dossier structuré. Nous préparons la réponse et vous accompagnons à chaque étape.
+              </p>
+            </div>
+          </article>
+
+        </div>
       </section>
 
       <footer class="footer">
@@ -51,7 +806,7 @@
             <img src="assets/mini-logo.png" alt="FISCALIFE" />
             <div>
               <div class="footer-label">FISCALIFE</div>
-              <div class="footer-title">FISCA LIFE</div>
+              <div class="footer-title">FISCALIFE</div>
               <div class="footer-sub" data-i18n="footerTagline">Expertise-comptable et conseils fiscaux</div>
             </div>
           </div>
@@ -76,13 +831,57 @@
         </div>
 
         <div class="footer-bottom">
-          <span>© 2026 FISCA LIFE</span>
-          <span class="footer-muted" data-i18n="footerLegal">Mentions légales • Confidentialité</span>
+          <span>© 2022 FISCALIFE</span>
+          <a href="legal.html" class="footer-muted" data-i18n="footerLegal">Mentions légales • Confidentialité</a>
         </div>
       </footer>
     </div>
   </main>
 
   <script src="assets/app.js"></script>
+  <script src="assets/cookie.js"></script>
+
+  <!-- JS FAQ (filtre + accordéon) -->
+  <script>
+    (function () {
+      const filters = document.querySelectorAll(".faq-filter");
+      const items = document.querySelectorAll(".faq-item");
+
+      filters.forEach(btn => {
+        btn.addEventListener("click", () => {
+          filters.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.dataset.filter;
+
+          items.forEach(item => {
+            const cats = item.dataset.cat.split(" ");
+            const show = filter === "all" || cats.includes(filter);
+            item.style.display = show ? "" : "none";
+          });
+        });
+      });
+
+      items.forEach(item => {
+        const q = item.querySelector(".faq-question");
+        const icon = item.querySelector(".faq-icon");
+
+        q.addEventListener("click", () => {
+          const isOpen = item.classList.contains("is-open");
+
+          items.forEach(i => {
+            i.classList.remove("is-open");
+            const ic = i.querySelector(".faq-icon");
+            if (ic) ic.textContent = "+";
+          });
+
+          if (!isOpen) {
+            item.classList.add("is-open");
+            icon.textContent = "−";
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

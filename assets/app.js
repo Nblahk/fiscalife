@@ -48,7 +48,7 @@ const translations = {
     svc5Text: "Ne vous contentez pas de suivre vos chiffres, pilotez votre activité. Indicateurs, performances et conseils pour grandir étape par étape.",
     svc6Title: "Parlons de votre situation",
     svc6Text: "Chaque projet est unique. Un premier échange est essentiel pour comprendre vos besoins et proposer une solution sur mesure.",
-    whyTitle: "Pourquoi choisir FISCA LIFE ?",
+    whyTitle: "Pourquoi choisir FISCALIFE ?",
     whyText: "Nous privilégions un service rigoureux, transparent et orienté solutions, avec un suivi régulier et des conseils clairs qui simplifient votre quotidien.",
     stat1Num: "100%",
     stat1Label: "suivi personnalisé",
@@ -241,7 +241,7 @@ const translations = {
   svc6Title: "Let’s talk about your situation",
   svc6Text: "Every project is unique. A first exchange is essential to understand your needs and propose a tailored solution.",
 
-  whyTitle: "Why choose FISCA LIFE?",
+  whyTitle: "Why choose FISCALIFE?",
   whyText: "We prioritize rigorous, transparent, solution-oriented service with regular follow-up and clear advice that simplifies your daily work.",
   stat1Num: "100%",
   stat1Label: "personal follow-up",
