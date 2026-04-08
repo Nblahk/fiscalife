@@ -1,4 +1,4 @@
-const translations = {
+﻿const translations = {
   fr: {
     titleHome: "FISCALIFE • Accueil",
     home: "Accueil",
@@ -89,7 +89,7 @@ const translations = {
     footerNote: "Infos complètes à ajouter plus tard (adresse, téléphone, email).",
     footerLegal: "Mentions légales • Confidentialité",
     footerAddressLine1: "Avenue Charles De Tollenaere 48, 1070 Bruxelles consult@fiscalife.be",
-    footerAddressLine2: "0470 65 64 55",
+    footerAddressLine2: "+32 470 65 64 55",
     footerAddressLine3: "TVA BE 0780.607.302",
 
     cabinetPill: "Notre cabinet",
@@ -185,7 +185,7 @@ const translations = {
     contactMessagePlaceholder: "Votre message",
     contactAddress: "Avenue Charles De Tollenaere 48, 1070 Bruxelles",
     contactEmail: "consult@fiscalife.be",
-    contactPhone: "0470 65 64 55",
+    contactPhone: "+32 470 65 64 55",
 
     homeSimpleTitle: "Fiscalife Consulting",
     homeSimpleP1: `Fiscalife est un cabinet de comptabilité et de conseil fiscal basé en Belgique, spécialisé dans l’accompagnement des indépendants, PME et sociétés. L’objectif est simple : assurer une comptabilité claire et conforme, tout en identifiant les meilleures opportunités d’optimisation fiscale, en toute légalité.`,
@@ -520,7 +520,7 @@ footerContactLink: "Open contact page",
 footerNote: "Add full details later (address, phone, email).",
 footerLegal: "Legal notice • Privacy",
   footerAddressLine1: "Avenue Charles De Tollenaere 48, 1070 Brussels consult@fiscalife.be",
-  footerAddressLine2: "0470 65 64 55",
+  footerAddressLine2: "+32 470 65 64 55",
   footerAddressLine3: "VAT BE 0780.607.302",
 
   cabinetPill: "Our firm",
@@ -616,7 +616,7 @@ footerLegal: "Legal notice • Privacy",
   contactMessagePlaceholder: "Your message",
   contactAddress: "Avenue Charles De Tollenaere 48, 1070 Brussels",
   contactEmail: "consult@fiscalife.be",
-  contactPhone: "0470 65 64 55",
+  contactPhone: "+32 470 65 64 55",
 
   homeSimpleTitle: "Fiscalife Consulting",
   homeSimpleP1: `Fiscalife is an accounting and tax advisory firm based in Belgium that supports freelancers, SMEs, and companies. The goal is simple: deliver clear, compliant bookkeeping while identifying the best tax optimization opportunities within the law.`,

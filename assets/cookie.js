@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   var consentKey = 'fiscalife_cookie_consent';
 
   function getConsent() {

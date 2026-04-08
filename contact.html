@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
@@ -26,7 +26,6 @@
       <!-- Milieu : 5 onglets -->
       <nav class="nav" aria-label="Navigation principale">
         <a href="index.html" data-i18n="home">Accueil</a>
-        <a href="cabinet.html" data-i18n="cabinet">Notre cabinet</a>
         <a href="services.html" data-i18n="services">Nos services</a>
         <a href="newsletter.html" data-i18n="newsletter">Newsletter</a>
         <a href="contact.html" data-i18n="contact">Contact</a>
@@ -51,18 +50,55 @@
             <div class="contact-photo">
               <img src="assets/othman-comptable.jpeg" alt="Othman - FISCALIFE CONSULTING" />
             </div>
-            <div class="contact-info">
-              <div class="contact-row">
-                <span class="contact-icon">📍</span>
-                <span data-i18n="contactAddress">Avenue Charles De Tollenaere 48, 1070 Bruxelles</span>
-              </div>
-              <div class="contact-row">
-                <span class="contact-icon">✉️</span>
-                <a href="mailto:consult@fiscalife.be" data-i18n="contactEmail">consult@fiscalife.be</a>
-              </div>
-              <div class="contact-row">
-                <span class="contact-icon">📞</span>
-                <a href="tel:+32470656455" data-i18n="contactPhone">0470 65 64 55</a>
+            <div class="contact-card">
+              <div class="contact-inner">
+                <div class="contact-list">
+
+                  <div class="contact-item">
+                    <div class="icon-box">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 21s-6-5.33-6-11a6 6 0 1 1 12 0c0 5.67-6 11-6 11z"></path>
+                        <circle cx="12" cy="10" r="2.5"></circle>
+                      </svg>
+                    </div>
+                    <div class="contact-content">
+                      <span class="contact-label">Adresse</span>
+                      <div class="contact-text">
+                        <span data-i18n="contactAddress">Avenue Charles De Tollenaere 48,<br />1070 Bruxelles</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <div class="icon-box">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 6h16v12H4z"></path>
+                        <path d="M4 7l8 6 8-6"></path>
+                      </svg>
+                    </div>
+                    <div class="contact-content">
+                      <span class="contact-label">Email</span>
+                      <div class="contact-text">
+                        <a href="mailto:consult@fiscalife.be" data-i18n="contactEmail">consult@fiscalife.be</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <div class="icon-box">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.72 19.72 0 0 1-8.63-3.07 19.28 19.28 0 0 1-6-6A19.72 19.72 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8.1 9.91a16 16 0 0 0 6 6l1.45-1.19a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z"></path>
+                      </svg>
+                    </div>
+                    <div class="contact-content">
+                      <span class="contact-label">Téléphone</span>
+                      <div class="contact-text">
+                        <a href="tel:+32470656455" data-i18n="contactPhone">+32 470 65 64 55</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
@@ -70,6 +106,10 @@
           <div class="contact-panel">
             <h2 data-i18n="contactFormTitle">Écrivez-nous</h2>
             <form class="contact-form" action="#" method="post">
+              <div class="field">
+                <label for="contact-firstname" data-i18n="contactFirstNameLabel">Prénom</label>
+                <input id="contact-firstname" type="text" name="firstname" placeholder="Votre prénom" data-i18n-placeholder="contactFirstNamePlaceholder" />
+              </div>
               <div class="field">
                 <label for="contact-name" data-i18n="contactNameLabel">Nom</label>
                 <input id="contact-name" type="text" name="name" placeholder="Votre nom" data-i18n-placeholder="contactNamePlaceholder" />
@@ -124,7 +164,6 @@
             <div class="footer-h" data-i18n="footerNav">Navigation</div>
             <a href="index.html" data-i18n="home">Accueil</a>
             <a href="services.html" data-i18n="services">Nos services</a>
-            <a href="cabinet.html" data-i18n="cabinet">Notre cabinet</a>
             <a href="newsletter.html" data-i18n="newsletter">Newsletter</a>
             <a href="contact.html" data-i18n="contact">Contact</a>
           </div>
@@ -133,7 +172,7 @@
             <div class="footer-h" data-i18n="footerContact">Contact</div>
             <div class="footer-muted">
               <span data-i18n="footerAddressLine1">Avenue Charles De Tollenaere 48, 1070 Bruxelles consult@fiscalife.be</span><br />
-              <span data-i18n="footerAddressLine2">0470 65 64 55</span><br />
+              <span data-i18n="footerAddressLine2">+32 470 65 64 55</span><br />
               <span data-i18n="footerAddressLine3">TVA BE 0780.607.302</span>
             </div>
           </div>
