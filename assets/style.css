@@ -1,3 +1,13 @@
+.services-hero .section-head h1{
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9eef5;
+  width: 100%;
+  font-size: 32px;
+  line-height: 1.15;
+  color: #0f172a;
+  font-weight: 500;
+}
 :root{
   --nav-bg: #1F2A37;        /* bleu foncé pro */
   --nav-bg-2: #1E293B;      /* variante */
@@ -255,15 +265,27 @@ p{
 .contact-intro{
   max-width: var(--maxw);
   margin: 24px auto 12px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
 }
 .contact-intro h1{
-  margin: 0 0 8px;
+  margin: 0 0 12px;
   font-size: 32px;
   color:#0f172a;
+  font-weight: 500;
+  line-height: 1.15;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9eef5;
 }
 .contact-intro p{
   margin: 0;
   color:#4b5563;
+  text-align: center;
+  text-justify: auto;
 }
 
 .contact-block{
@@ -283,9 +305,13 @@ p{
   box-shadow: 0 10px 24px rgba(0,0,0,.06);
 }
 .contact-panel h2{
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   font-size: 20px;
   color:#0f172a;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e9eef5;
 }
 .contact-photo img{
   width: 100%;
@@ -408,7 +434,7 @@ p{
   gap: 4px;
 }
 .contact-form label{
-  font-size: 12.5px;
+  font-size: 14px;
   font-weight: 700;
   color:#374151;
 }
@@ -416,7 +442,8 @@ p{
 .contact-form textarea{
   border: 1px solid #e5e7eb;
   border-radius: 12px;
-  padding: 8px 10px;
+  padding: 10px 12px;
+  font-size: 15px;
   font: inherit;
   background:#f9fafb;
   outline: none;
@@ -432,6 +459,65 @@ p{
   margin: 4px 0 0;
   color:#6b7280;
   font-size: 13px;
+}
+
+.form-toast{
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(15, 23, 42, 0.35);
+  z-index: 9999;
+}
+.form-toast.is-visible{
+  display: flex;
+}
+.form-toast-card{
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px 18px;
+  text-align: center;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18);
+  position: relative;
+}
+.form-toast-card.is-error{
+  border-color: #f1c9c9;
+  background: #fff5f5;
+}
+.form-toast-title{
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+.form-toast-text{
+  color: #475569;
+  font-size: 14px;
+}
+.form-toast-close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 999px;
+  font-size: 16px;
+  line-height: 1;
+  color: #64748b;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-toast-close:hover{
+  color: #0f172a;
+  border-color: #cbd5e1;
 }
 
 .contact-map{
@@ -458,6 +544,20 @@ p{
 
 /* Hero */
 .hero{ margin-top: 18px; }
+.services-hero .section-head{
+  text-align: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 12px 24px 22px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+.services-hero .section-head p{
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+}
 .hero-grid{
   display:grid;
   grid-template-columns: 1.15fr .85fr;
@@ -558,7 +658,7 @@ p{
 .badge span{ font-weight: 800; color:#111827; }
 
 /* Cards / grids */
-.grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
 .cabinet-pillars-grid{ margin-bottom: 1cm; }
 .card-link{ text-decoration:none; color:inherit; }
 .card{
@@ -569,6 +669,42 @@ p{
 .card:hover{ transform: translateY(-2px); }
 .card h3{ margin:10px 0 6px; }
 .card p{ margin:0; color:#6b7280; }
+
+.service-card{
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 14px 26px 12px;
+  border: 1px solid #e8edf5;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  transition: 0.3s ease;
+  text-align: center;
+}
+.service-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.10);
+}
+.service-card img{
+  width: clamp(208px, 20vw, 264px);
+  height: clamp(208px, 20vw, 264px);
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px;
+}
+.service-card h3{
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  color: #0f172a;
+  text-align: center;
+  border-bottom: 1px solid #e9eef5;
+}
+.service-card p{
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #475569;
+  text-align: center;
+  text-justify: auto;
+}
 
 /* Photos cabinet */
 .photo-row{
@@ -730,18 +866,29 @@ p{
   text-align: left;
   padding: 10px 10px 4px;
 }
+.nl-hero .section-head{
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
 .nl-hero h1{
   margin: 0;
-  color: #0f4d98;
-  font-size: 44px;
-  line-height: 1.1;
-  font-weight: 900;
+  color: #0f172a;
+  font-size: 32px;
+  line-height: 1.15;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9eef5;
 }
 .nl-hero p{
   margin: 12px auto 0;
   color: #475569;
   max-width: 780px;
   font-size: 17px;
+  text-align: center;
 }
 
 /* Cards newsletter */
@@ -771,14 +918,15 @@ p{
   padding: 12px;
 }
 .nl-card-body h3{
-  margin: 0;
-  color: #163e79;
+  margin: 0 0 20px;
+  color: #0f172a;
   font-size: 15px;
   line-height: 1.35;
-  min-height: 62px;
+  min-height: 0;
+  text-align: center;
 }
 .nl-meta{
-  margin-top: 8px;
+  margin-top: 0;
   color: #64748b;
   font-size: 12px;
   display: flex;
@@ -997,7 +1145,7 @@ p{
 
 .home-simple-media{
   width: min(90%, 860px);
-  margin: 8px auto 18px;
+  margin: 14px auto 18px;
   text-align: center;
 }
 
@@ -1021,15 +1169,38 @@ p{
 }
 
 .home-simple h1{
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   font-size: 32px;
   color: #0f172a;
+  font-weight: 500;
+  line-height: 1.15;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9eef5;
 }
 
 .home-simple p{
-  margin: 0 0 10px;
+  margin: 0 0 16px;
   color: #374151;
   line-height: 1.65;
+}
+
+.cabinet-hero .section-head{
+  text-align: center;
+  margin-bottom: 16px;
+}
+.cabinet-hero .section-head h2{
+  margin: 0 0 12px;
+  color: #0f172a;
+  font-size: 32px;
+  line-height: 1.15;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9eef5;
+}
+.cabinet-hero p{
+  color: #374151;
+  margin: 0 0 12px;
 }
 
 
